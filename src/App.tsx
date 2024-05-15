@@ -2,6 +2,7 @@ import { useEffect,useState } from 'react';
 import './App.css'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import NewApi from './NewApi';
+import BasicExample from './assets/navbar';
 
 const BASE_URL = "https://rickandmortyapi.com/api";
 const POST_URL =  BASE_URL + "/character"
@@ -36,10 +37,9 @@ useEffect(() => {
   })();
 }, []);
 
-
   return (
     <>
-    <h1 className='text-center'>react api</h1>
+    <BasicExample/>
       <Container>
         <Row>
           {posts.map((post) => (
